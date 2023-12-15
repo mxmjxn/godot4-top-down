@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3j41vteqeh6f"]
+
+[ext_resource type="Texture2D" uid="uid://ca1uqe8kvvvkb" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/bed.png" id="1_pe0mx"]
+[ext_resource type="Texture2D" uid="uid://buk5ml1xp307s" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/pillow_large.png" id="2_mmm5i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rh2yy"]
+size = Vector2(631, 365)
+
+[node name="bed" type="StaticBody2D"]
+
+[node name="bedSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_pe0mx")
+
+[node name="pillow" type="Sprite2D" parent="."]
+position = Vector2(248, 0)
+texture = ExtResource("2_mmm5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_rh2yy")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl0dg5nier5e"]
+
+[ext_resource type="Texture2D" uid="uid://bvld6sxxvb007" path="res://UltimateGodotIntro2D-main/resources/graphics/projectiles/blue.png" id="1_4krcw"]
+[ext_resource type="Script" path="res://scenes/projectiles/laser.gd" id="1_i0p3m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7cqit"]
+height = 100.0
+
+[node name="Laser" type="Area2D"]
+script = ExtResource("1_i0p3m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 34)
+texture = ExtResource("1_4krcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_7cqit")
