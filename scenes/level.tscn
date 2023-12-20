@@ -82,7 +82,7 @@ texture = ExtResource("7_8hmig")
 position = Vector2(-2542, -811)
 texture = ExtResource("8_qq5ih")
 
-[node name="House" parent="." instance=ExtResource("11_ms5uw")]
+[node name="House" parent="Ground" instance=ExtResource("11_ms5uw")]
 position = Vector2(2661, 2602)
 rotation = 1.5708
 
