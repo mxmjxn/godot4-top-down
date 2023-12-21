@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cttw0yg248mx8"]
+[gd_scene load_steps=16 format=3 uid="uid://cttw0yg248mx8"]
 
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_6umwp"]
 [ext_resource type="PackedScene" uid="uid://biennnk17886o" path="res://scenes/player/player.tscn" id="2_1xu78"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bpfrh3l6rqn7y" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/moss/moss_4.png" id="6_8d4c0"]
 [ext_resource type="Texture2D" uid="uid://cqdbvk6osa58f" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/moss/moss_3.png" id="7_8hmig"]
 [ext_resource type="Texture2D" uid="uid://c7ssmx51ydri1" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/moss/moss_5.png" id="8_qq5ih"]
+[ext_resource type="PackedScene" uid="uid://y2cnyv3bglq6" path="res://scenes/objects/steamvent.tscn" id="10_g5xet"]
 [ext_resource type="PackedScene" uid="uid://duankv7f5r2uf" path="res://scenes/objects/house.tscn" id="11_ms5uw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h14lt"]
@@ -84,7 +85,11 @@ texture = ExtResource("8_qq5ih")
 
 [node name="House" parent="Ground" instance=ExtResource("11_ms5uw")]
 position = Vector2(2661, 2602)
-rotation = 1.5708
+rotation = 2.53073
+
+[node name="Steamvent" parent="Ground" instance=ExtResource("10_g5xet")]
+position = Vector2(-23, 581)
+rotation = 2.53073
 
 [node name="Gate" parent="." instance=ExtResource("2_vseq8")]
 

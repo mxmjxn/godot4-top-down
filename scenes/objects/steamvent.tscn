@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://y2cnyv3bglq6"]
+
+[ext_resource type="Texture2D" uid="uid://b275lm8erbrmv" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/ventilation_hole.png" id="1_xsfri"]
+[ext_resource type="Texture2D" uid="uid://d32506gaoakdk" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/white.png" id="2_u74bp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ncmsp"]
+radius = 88.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b4uor"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+gravity = Vector3(50, -90, 0)
+linear_accel_min = 2.71
+linear_accel_max = 14.48
+scale_max = 3.0
+
+[node name="Steamvent" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ncmsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xsfri")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+amount = 5
+process_material = SubResource("ParticleProcessMaterial_b4uor")
+texture = ExtResource("2_u74bp")
+lifetime = 2.0
+fixed_fps = 60
