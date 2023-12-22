@@ -1,0 +1,206 @@
+[gd_scene load_steps=50 format=3 uid="uid://b7ux2kvcjx6as"]
+
+[ext_resource type="Texture2D" uid="uid://binwaprqeai7r" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00000.png" id="1_lnal8"]
+[ext_resource type="Texture2D" uid="uid://dmkxvavmebacx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00001.png" id="2_duq50"]
+[ext_resource type="Texture2D" uid="uid://cpapo8b1h44st" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00002.png" id="3_m81fe"]
+[ext_resource type="Texture2D" uid="uid://cgfn6vqeisrmm" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00003.png" id="4_oltmc"]
+[ext_resource type="Texture2D" uid="uid://cqo6n62r6g04s" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00004.png" id="5_b8207"]
+[ext_resource type="Texture2D" uid="uid://bo1hao5kkgkk2" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00005.png" id="6_uffu2"]
+[ext_resource type="Texture2D" uid="uid://c2diu0j8twem6" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00006.png" id="7_rrdly"]
+[ext_resource type="Texture2D" uid="uid://crupmo0yer0iu" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00007.png" id="8_olejk"]
+[ext_resource type="Texture2D" uid="uid://brv4bdym1lynw" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00008.png" id="9_243k4"]
+[ext_resource type="Texture2D" uid="uid://djnlnhmh21np0" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00009.png" id="10_qof6q"]
+[ext_resource type="Texture2D" uid="uid://ckpc73e8tfkib" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00010.png" id="11_l2tfb"]
+[ext_resource type="Texture2D" uid="uid://b28ua3dcotcw7" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00011.png" id="12_fh6tn"]
+[ext_resource type="Texture2D" uid="uid://m4xqxfsm152i" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00012.png" id="13_cwp8i"]
+[ext_resource type="Texture2D" uid="uid://bt8byv0j3ux5p" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00013.png" id="14_j5pq8"]
+[ext_resource type="Texture2D" uid="uid://cg2fl21fpcqwx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00014.png" id="15_finml"]
+[ext_resource type="Texture2D" uid="uid://ctlpffluj4w2l" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00015.png" id="16_trcrn"]
+[ext_resource type="Texture2D" uid="uid://c0u8vikgt42ca" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00016.png" id="17_xkl63"]
+[ext_resource type="Texture2D" uid="uid://bpb1cd1tgxjo8" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00017.png" id="18_0hn2c"]
+[ext_resource type="Texture2D" uid="uid://dbo4jsovr8f3r" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00018.png" id="19_ymurl"]
+[ext_resource type="Texture2D" uid="uid://kohu5bywdipl" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00019.png" id="20_vie3x"]
+[ext_resource type="Texture2D" uid="uid://ccnvr3uugm5pl" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00020.png" id="21_ywiwj"]
+[ext_resource type="Texture2D" uid="uid://bekf7rfjdjtoq" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00021.png" id="22_h81dr"]
+[ext_resource type="Texture2D" uid="uid://bmfoyeb1d3l8g" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00022.png" id="23_s7ib6"]
+[ext_resource type="Texture2D" uid="uid://cjk1jmohnnj2c" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00023.png" id="24_5aa7f"]
+[ext_resource type="Texture2D" uid="uid://c2if6domd7tep" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00024.png" id="25_gf4h6"]
+[ext_resource type="Texture2D" uid="uid://0sapocisgl5r" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00025.png" id="26_e4q05"]
+[ext_resource type="Texture2D" uid="uid://dnjpmsncn5tuk" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00026.png" id="27_jhqwu"]
+[ext_resource type="Texture2D" uid="uid://bsdb7p185ob0n" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00027.png" id="28_67gn5"]
+[ext_resource type="Texture2D" uid="uid://dik3qj0ifo0qx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00028.png" id="29_7tors"]
+[ext_resource type="Texture2D" uid="uid://c6jha1mwrjb5" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00029.png" id="30_hygg0"]
+[ext_resource type="Texture2D" uid="uid://bqus12s8w6515" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00030.png" id="31_8kw3r"]
+[ext_resource type="Texture2D" uid="uid://d25ytqlltmr2h" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00031.png" id="32_kpuda"]
+[ext_resource type="Texture2D" uid="uid://bugr12jry44cn" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00032.png" id="33_fcxd6"]
+[ext_resource type="Texture2D" uid="uid://damuvvwgjitys" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00033.png" id="34_x5d1t"]
+[ext_resource type="Texture2D" uid="uid://l81oj8dhbh3d" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00034.png" id="35_5o6s0"]
+[ext_resource type="Texture2D" uid="uid://bnawg5bfufdql" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00035.png" id="36_jkpyy"]
+[ext_resource type="Texture2D" uid="uid://dquo6aehucrt4" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00036.png" id="37_n6wku"]
+[ext_resource type="Texture2D" uid="uid://b42iiux2mrngw" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00037.png" id="38_x1mwx"]
+[ext_resource type="Texture2D" uid="uid://cp67taecjd6hp" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00038.png" id="39_phi8n"]
+[ext_resource type="Texture2D" uid="uid://n0ld778tdsbl" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00039.png" id="40_y0ltj"]
+[ext_resource type="Texture2D" uid="uid://brtkiyk0u2r66" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00040.png" id="41_4c2cm"]
+[ext_resource type="Texture2D" uid="uid://csk8bdanvtkph" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00041.png" id="42_f2pda"]
+[ext_resource type="Texture2D" uid="uid://bnn11n4piyq2h" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00042.png" id="43_lbkcv"]
+[ext_resource type="Texture2D" uid="uid://dcaf1xq6ek6cu" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00043.png" id="44_4obc0"]
+[ext_resource type="Texture2D" uid="uid://c7f2vkjfes75y" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00044.png" id="45_a7tys"]
+[ext_resource type="Texture2D" uid="uid://b0xydqekb837g" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00045.png" id="46_5ivmi"]
+[ext_resource type="Texture2D" uid="uid://j4y1hw0ncbvs" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00046.png" id="47_7fww5"]
+[ext_resource type="Texture2D" uid="uid://ccqmbdolgoba7" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/fan_animation/00047.png" id="48_xeogy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ydd5k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lnal8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_duq50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m81fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oltmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b8207")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uffu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rrdly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_olejk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_243k4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qof6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_l2tfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fh6tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cwp8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j5pq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_finml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_trcrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xkl63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0hn2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ymurl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vie3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ywiwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_h81dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_s7ib6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5aa7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_gf4h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_e4q05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jhqwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_67gn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7tors")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_hygg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8kw3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_kpuda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_fcxd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_x5d1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5o6s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_jkpyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_n6wku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_x1mwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_phi8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_y0ltj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_4c2cm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_f2pda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_lbkcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_4obc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_a7tys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_5ivmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_7fww5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_xeogy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[node name="LightFanAnimation" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ydd5k")
+frame_progress = 0.0855987

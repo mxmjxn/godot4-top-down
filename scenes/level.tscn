@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cttw0yg248mx8"]
+[gd_scene load_steps=17 format=3 uid="uid://cttw0yg248mx8"]
 
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_6umwp"]
 [ext_resource type="PackedScene" uid="uid://biennnk17886o" path="res://scenes/player/player.tscn" id="2_1xu78"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cqdbvk6osa58f" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/moss/moss_3.png" id="7_8hmig"]
 [ext_resource type="Texture2D" uid="uid://c7ssmx51ydri1" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/moss/moss_5.png" id="8_qq5ih"]
 [ext_resource type="PackedScene" uid="uid://y2cnyv3bglq6" path="res://scenes/objects/steamvent.tscn" id="10_g5xet"]
+[ext_resource type="PackedScene" uid="uid://b7ux2kvcjx6as" path="res://scenes/objects/light_fan_animation.tscn" id="11_6did7"]
 [ext_resource type="PackedScene" uid="uid://duankv7f5r2uf" path="res://scenes/objects/house.tscn" id="11_ms5uw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h14lt"]
@@ -91,7 +92,17 @@ rotation = 2.53073
 position = Vector2(-23, 581)
 rotation = 2.53073
 
+[node name="LightFanAnimation" parent="Ground" instance=ExtResource("11_6did7")]
+position = Vector2(3173, 1755)
+autoplay = "default"
+
+[node name="LightFanAnimation2" parent="Ground" instance=ExtResource("11_6did7")]
+position = Vector2(2539, 2190)
+autoplay = "default"
+frame_progress = 0.0382832
+
 [node name="Gate" parent="." instance=ExtResource("2_vseq8")]
+metadata/_edit_lock_ = true
 
 [node name="player" parent="." instance=ExtResource("2_1xu78")]
 position = Vector2(477, 454)
@@ -101,6 +112,7 @@ zoom = Vector2(0.6, 0.6)
 position_smoothing_enabled = true
 
 [node name="Projectiles" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="player_exited_gate" from="Gate" to="." method="_on_gate_player_exited_gate"]
