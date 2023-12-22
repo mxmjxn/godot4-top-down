@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://plj3rkaouqi"]
+
+[ext_resource type="Texture2D" uid="uid://bgodhuoje7v8q" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/wall_lamp.png" id="1_3x7v7"]
+[ext_resource type="Texture2D" uid="uid://biyfnf8xq4xqx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/textures/circle.png" id="2_rd5dw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0pvxd"]
+radius = 61.0
+height = 708.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_437kj"]
+polygon = PackedVector2Array(-197, 32, 226, 32, 226, 40, 231, 42, -201, 42, -197, 39)
+
+[node name="WallLight" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0pvxd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(522, 148)
+texture = ExtResource("1_3x7v7")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.815686, 0.509804, 0.137255, 1)
+energy = 6.0
+shadow_enabled = true
+texture = ExtResource("2_rd5dw")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_437kj")

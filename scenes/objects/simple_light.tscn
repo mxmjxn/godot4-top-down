@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhniivd5h6poh"]
+
+[ext_resource type="Texture2D" uid="uid://0u7lyqrijhyo" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/light.png" id="1_0w5cl"]
+[ext_resource type="Texture2D" uid="uid://biyfnf8xq4xqx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/textures/circle.png" id="2_n5bwt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_axn1i"]
+radius = 17.0
+height = 194.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qioo6"]
+polygon = PackedVector2Array(-77, -18, 76, -18, 82, -17, 89, -15, 92, -12, 95, -8, 98, -3, 98, 1, 98, 6, 93, 10, 87, 14, 82, 16, 77, 15, 76, 0, 76, -5, 74, -9, 70, -11, 65, -12, 57, -12, -68, -13, -71, -11, -75, -8, -76, -4, -76, 1, -76, 7, -76, 11, -76, 16, -81, 16, -87, 15, -92, 11, -97, 6, -98, 0, -97, -6, -93, -11, -88, -15, -83, -17)
+
+[node name="SimpleLight" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_axn1i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0w5cl")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.266667, 0.615686, 0.894118, 1)
+energy = 5.0
+shadow_enabled = true
+texture = ExtResource("2_n5bwt")
+texture_scale = 2.0
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_qioo6")

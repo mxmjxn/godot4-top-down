@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://biennnk17886o"]
+[gd_scene load_steps=9 format=3 uid="uid://biennnk17886o"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_0ur4k"]
 [ext_resource type="Texture2D" uid="uid://drvq8efjxdcs0" path="res://UltimateGodotIntro2D-main/resources/graphics/player/player.png" id="1_omppt"]
 [ext_resource type="Texture2D" uid="uid://d32506gaoakdk" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/white.png" id="3_rmt6t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d0ssk"]
+radius = 66.0076
 
 [sub_resource type="Gradient" id="Gradient_majg0"]
 colors = PackedColorArray(0.658824, 0.827451, 1, 1, 1, 1, 1, 0.360784)
@@ -27,12 +30,15 @@ color_ramp = SubResource("GradientTexture1D_r7m3w")
 anim_speed_min = 1.0
 anim_speed_max = 5.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_d0ssk"]
-radius = 66.0076
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_71770"]
+polygon = PackedVector2Array(7, -59, 16, -61, 27, -55, 31, -48, 39, -41, 38, -38, 43, -30, 50, -29, 56, -25, 70, -11, 74, -10, 79, -12, 85, -10, 91, -5, 98, -5, 103, -3, 105, -1, 105, 1, 118, 2, 119, 4, 117, 7, 118, 8, 122, 5, 126, 8, 128, 13, 128, 24, 127, 28, 124, 32, 119, 32, 118, 30, 114, 30, 117, 35, 116, 36, 106, 36, 104, 34, 95, 43, 90, 43, 90, 48, 88, 52, 58, 52, 53, 47, 54, 43, 60, 40, 37, 40, 26, 45, 20, 45, 9, 53, -5, 58, -10, 58, -15, 60, -23, 59, -30, 59, -37, 55, -42, 50, -43, 45, -47, 38, -48, 33, -54, 28, -58, 20, -56, 18, -56, 14, -61, 12, -64, 7, -65, -1, -64, -10, -65, -21, -58, -31, -57, -38, -47, -46, -39, -48, -35, -47, -32, -48, -32, -52, -20, -57, -18, -57, -17, -55, -8, -59, 0, -59)
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 31
 script = ExtResource("1_0ur4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_d0ssk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(31.5, 0)
@@ -47,9 +53,6 @@ process_material = SubResource("ParticleProcessMaterial_aidu1")
 texture = ExtResource("3_rmt6t")
 lifetime = 0.15
 one_shot = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_d0ssk")
 
 [node name="LaserTimer" type="Timer" parent="."]
 wait_time = 0.5
@@ -81,8 +84,11 @@ rotation = 1.5708
 position = Vector2(18, -118)
 rotation = 1.5708
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_71770")
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
-[connection signal="timeout" from="LaserTimer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="LaserTimer" to="." method="_on_laser_timer_timeout"]
-[connection signal="timeout" from="GrenadeTimer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="LaserTimer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="GrenadeTimer" to="." method="_on_grenade_timer_timeout"]
+[connection signal="timeout" from="GrenadeTimer" to="." method="_on_timer_timeout"]
