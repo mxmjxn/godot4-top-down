@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://pf65uhpcf4r4"]
+[gd_scene load_steps=4 format=3 uid="uid://pf65uhpcf4r4"]
 
 [ext_resource type="Texture2D" uid="uid://bx3pvj4stm3j8" path="res://UltimateGodotIntro2D-main/resources/graphics/enemies/drone.png" id="1_w1mlp"]
+[ext_resource type="Script" path="res://scenes/enemies/drone.gd" id="1_w7oks"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_echho"]
 radius = 78.4092
@@ -8,6 +9,7 @@ radius = 78.4092
 [node name="drone" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 15
+script = ExtResource("1_w7oks")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_w1mlp")

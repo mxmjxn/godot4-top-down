@@ -3,16 +3,16 @@ extends Node2D
 var laser_scene: PackedScene = preload("res://scenes/projectiles/laser.tscn")
 var grenade_scene: PackedScene = preload("res://scenes/projectiles/grenade.tscn")
 
-func _on_gate_player_entered_gate():
-	print('player had entered the gate')
+func _on_gate_player_entered_gate(_body):
+	var tween = create_tween()
+	tween.tween_property($player, "speed", 0, 0.7)
 
 
 func _on_gate_player_exited_gate():
 	print('player has exited the gate')
 
 
-func _on_player_laser_input(pos, direction):
-	print('laser has been fired')
+func _on_player_laser_input(pos, direction): 
 	var laser = laser_scene.instantiate() as Area2D
 	laser.position = pos
 	laser.direction = direction
@@ -21,7 +21,6 @@ func _on_player_laser_input(pos, direction):
 
 
 func _on_player_grenade_input(pos, direction):
-	print('grenade has been thrown')
 	var grenade = grenade_scene.instantiate() as RigidBody2D
 	grenade.position = pos
 	grenade.linear_velocity = direction * grenade.speed
