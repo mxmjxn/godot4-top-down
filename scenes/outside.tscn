@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://dblgxcdcld4ne"]
+[gd_scene load_steps=19 format=3 uid="uid://dblgxcdcld4ne"]
 
 [ext_resource type="PackedScene" uid="uid://cttw0yg248mx8" path="res://scenes/level.tscn" id="1_lcby4"]
+[ext_resource type="Script" path="res://scenes/outside.gd" id="2_3cphe"]
 [ext_resource type="PackedScene" uid="uid://d13snjfgy4cx1" path="res://scenes/level_objects/gate.tscn" id="2_4c6c3"]
 [ext_resource type="Texture2D" uid="uid://q16e6fq42lkt" path="res://UltimateGodotIntro2D-main/resources/graphics/ground/stones.png" id="2_ubgkq"]
 [ext_resource type="Texture2D" uid="uid://d16paymfpt1y3" path="res://UltimateGodotIntro2D-main/resources/graphics/decals/dirt_patch.png" id="3_s1nuj"]
@@ -12,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://duankv7f5r2uf" path="res://scenes/objects/house.tscn" id="9_3dpcd"]
 [ext_resource type="PackedScene" uid="uid://y2cnyv3bglq6" path="res://scenes/objects/steamvent.tscn" id="10_fj1gi"]
 [ext_resource type="PackedScene" uid="uid://b7ux2kvcjx6as" path="res://scenes/objects/light_fan_animation.tscn" id="11_86fxj"]
+[ext_resource type="PackedScene" uid="uid://chw7qb4e1fev1" path="res://scenes/objects/child_objects/box.tscn" id="14_xxr38"]
+[ext_resource type="PackedScene" uid="uid://c11mgroqc3q5o" path="res://scenes/objects/child_objects/toilet.tscn" id="15_wiy7r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h14lt"]
 resource_name = "walls"
@@ -48,6 +51,7 @@ sources/0 = SubResource("TileSetAtlasSource_h14lt")
 sources/1 = SubResource("TileSetAtlasSource_jwn3d")
 
 [node name="Outside" instance=ExtResource("1_lcby4")]
+script = ExtResource("2_3cphe")
 
 [node name="Soil" type="Sprite2D" parent="Ground" index="0"]
 texture_repeat = 2
@@ -98,3 +102,11 @@ autoplay = "default"
 frame_progress = 0.0382832
 
 [node name="Gate" parent="." index="1" instance=ExtResource("2_4c6c3")]
+
+[node name="ItemContainer" parent="." index="4" instance=ExtResource("14_xxr38")]
+position = Vector2(995, 563)
+
+[node name="ItemContainer2" parent="." index="5" instance=ExtResource("15_wiy7r")]
+position = Vector2(571, 758)
+
+[connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]

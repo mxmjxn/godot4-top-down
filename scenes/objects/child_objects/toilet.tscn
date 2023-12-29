@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c11mgroqc3q5o"]
+
+[ext_resource type="PackedScene" uid="uid://cv2r1axcgnnxc" path="res://scenes/objects/item_container.tscn" id="1_vkec5"]
+[ext_resource type="Script" path="res://scenes/objects/child_objects/toilet.gd" id="2_fumb2"]
+[ext_resource type="Texture2D" uid="uid://7o1wl0dv2m7p" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/toilet.png" id="2_hf8c4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ar20a"]
+size = Vector2(228, 244)
+
+[node name="ItemContainer" instance=ExtResource("1_vkec5")]
+script = ExtResource("2_fumb2")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_ar20a")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_hf8c4")

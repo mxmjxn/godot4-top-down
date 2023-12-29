@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://chw7qb4e1fev1"]
+
+[ext_resource type="PackedScene" uid="uid://cv2r1axcgnnxc" path="res://scenes/objects/item_container.tscn" id="1_xh6os"]
+[ext_resource type="Script" path="res://scenes/objects/child_objects/box.gd" id="2_a7dyi"]
+[ext_resource type="Texture2D" uid="uid://cqsn4fpbn0t1l" path="res://UltimateGodotIntro2D-main/resources/graphics/objects/Box.png" id="2_up1tk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4at3f"]
+size = Vector2(357, 254)
+
+[node name="ItemContainer" instance=ExtResource("1_xh6os")]
+script = ExtResource("2_a7dyi")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_4at3f")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_up1tk")
