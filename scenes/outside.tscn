@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dblgxcdcld4ne"]
+[gd_scene load_steps=18 format=3 uid="uid://dblgxcdcld4ne"]
 
 [ext_resource type="PackedScene" uid="uid://cttw0yg248mx8" path="res://scenes/level.tscn" id="1_lcby4"]
 [ext_resource type="Script" path="res://scenes/outside.gd" id="2_3cphe"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://duankv7f5r2uf" path="res://scenes/objects/house.tscn" id="9_3dpcd"]
 [ext_resource type="PackedScene" uid="uid://y2cnyv3bglq6" path="res://scenes/objects/steamvent.tscn" id="10_fj1gi"]
 [ext_resource type="PackedScene" uid="uid://b7ux2kvcjx6as" path="res://scenes/objects/light_fan_animation.tscn" id="11_86fxj"]
+[ext_resource type="PackedScene" uid="uid://cr53lxaospvxf" path="res://scenes/UI/ui.tscn" id="14_kt1ch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h14lt"]
 resource_name = "walls"
@@ -100,22 +101,11 @@ autoplay = "default"
 frame_progress = 0.0382832
 
 [node name="Gate" parent="." index="1" instance=ExtResource("2_4c6c3")]
+metadata/_edit_lock_ = true
 
 [node name="player" parent="." index="3"]
 position = Vector2(585, 394)
 
-[node name="Label" type="Label" parent="." index="4"]
-offset_left = 723.0
-offset_top = 313.0
-offset_right = 902.0
-offset_bottom = 336.0
-text = "we can write some text"
-
-[node name="Button" type="Button" parent="." index="5"]
-offset_left = 801.0
-offset_top = 352.0
-offset_right = 809.0
-offset_bottom = 360.0
-text = "A button"
+[node name="UI" parent="." index="4" instance=ExtResource("14_kt1ch")]
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
