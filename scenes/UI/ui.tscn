@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cr53lxaospvxf"]
+[gd_scene load_steps=10 format=3 uid="uid://cr53lxaospvxf"]
 
+[ext_resource type="Script" path="res://scenes/UI/ui.gd" id="1_7nwcp"]
 [ext_resource type="Texture2D" uid="uid://dma500vrwl8lc" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/bullet.png" id="1_lgrwr"]
 [ext_resource type="Texture2D" uid="uid://cdsphxpi60u7d" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/grenade.png" id="2_7p5qj"]
 [ext_resource type="FontFile" uid="uid://bv6wdqvw2vnv5" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/subatomic.tsoonami.ttf" id="2_t86bm"]
@@ -14,6 +15,7 @@ default_font = ExtResource("2_t86bm")
 default_font = ExtResource("2_t86bm")
 
 [node name="UI" type="CanvasLayer"]
+script = ExtResource("1_7nwcp")
 
 [node name="LaserCounter" type="Control" parent="."]
 layout_mode = 3
