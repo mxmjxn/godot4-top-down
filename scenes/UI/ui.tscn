@@ -1,10 +1,87 @@
-[gd_scene format=3 uid="uid://cr53lxaospvxf"]
+[gd_scene load_steps=9 format=3 uid="uid://cr53lxaospvxf"]
+
+[ext_resource type="Texture2D" uid="uid://dma500vrwl8lc" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/bullet.png" id="1_lgrwr"]
+[ext_resource type="Texture2D" uid="uid://cdsphxpi60u7d" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/grenade.png" id="2_7p5qj"]
+[ext_resource type="FontFile" uid="uid://bv6wdqvw2vnv5" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/subatomic.tsoonami.ttf" id="2_t86bm"]
+[ext_resource type="Texture2D" uid="uid://bof3agaerqnk6" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/progress_bar/bg.png" id="4_v74xl"]
+[ext_resource type="Texture2D" uid="uid://xkpsk1pse16n" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/progress_bar/over.png" id="5_drx3i"]
+[ext_resource type="Texture2D" uid="uid://cdxpmtxfryg0t" path="res://UltimateGodotIntro2D-main/resources/graphics/ui/progress_bar/progress.png" id="6_ubsb3"]
+
+[sub_resource type="Theme" id="Theme_3ivkf"]
+default_font = ExtResource("2_t86bm")
+
+[sub_resource type="Theme" id="Theme_nhxit"]
+default_font = ExtResource("2_t86bm")
 
 [node name="UI" type="CanvasLayer"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 9
+[node name="LaserCounter" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.01
+anchor_top = 0.97
+anchor_right = 0.01
 anchor_bottom = 1.0
-offset_right = 81.0
+offset_top = -76.0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LaserCounter"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label" type="Label" parent="LaserCounter/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_3ivkf")
+text = "20"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="LaserCounter/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_lgrwr")
+expand_mode = 4
+
+[node name="GrenadeCounter" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.05
+anchor_top = 0.97
+anchor_right = 0.1
+anchor_bottom = 1.0
+offset_top = -76.0
+grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.733333, 0.937255, 0.85098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GrenadeCounter"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="GrenadeCounter/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_nhxit")
+text = "3"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GrenadeCounter/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_7p5qj")
+expand_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -40.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 50
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="MarginContainer"]
+layout_mode = 2
+value = 65.0
+texture_under = ExtResource("4_v74xl")
+texture_over = ExtResource("5_drx3i")
+texture_progress = ExtResource("6_ubsb3")

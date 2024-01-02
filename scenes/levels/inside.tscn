@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://bhkekabotrefg"]
 
-[ext_resource type="PackedScene" uid="uid://cttw0yg248mx8" path="res://scenes/level.tscn" id="1_hnqhu"]
+[ext_resource type="PackedScene" uid="uid://cttw0yg248mx8" path="res://scenes/levels/level.tscn" id="1_hnqhu"]
 [ext_resource type="Texture2D" uid="uid://csvd1qj3ijgxy" path="res://UltimateGodotIntro2D-main/resources/graphics/ground/dirt.png" id="2_12qdu"]
-[ext_resource type="Script" path="res://scenes/inside.gd" id="2_rrn1j"]
+[ext_resource type="Script" path="res://scenes/levels/inside.gd" id="2_rrn1j"]
 [ext_resource type="TileSet" uid="uid://cdfkcw160kemj" path="res://scenes/level_objects/Level_tilesets/house.tres" id="2_xb5si"]
 [ext_resource type="PackedScene" uid="uid://plj3rkaouqi" path="res://scenes/objects/wall_light.tscn" id="3_8ewdx"]
 [ext_resource type="PackedScene" uid="uid://bhniivd5h6poh" path="res://scenes/objects/simple_light.tscn" id="4_tppnv"]
