@@ -27,7 +27,8 @@ func _process(_delta):
 		var player_direction = (get_global_mouse_position() - position).normalized()
 		laser_input.emit(selected_laser.global_position, player_direction)
 		
-	if (Input.is_action_pressed("secondary action") and can_throw_grenade):
+	if (Input.is_action_pressed("secondary action") and can_throw_grenade and Globals.grenade_amount > 0):
+		Globals.grenade_amount -= 1
 		var grenade_markers = $GrenadeStartPositions.get_children()
 		var selected_grenade = grenade_markers[randi() % grenade_markers.size()]
 		can_throw_grenade = false
