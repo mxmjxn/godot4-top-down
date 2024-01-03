@@ -23,12 +23,3 @@ func _on_player_grenade_input(pos, direction):
 	UI.update_grenade_text()
 	
 	
-
-func _on_house_player_entered():
-	var camera_zoom_tween = get_tree().create_tween()
-	camera_zoom_tween.tween_property($player/Camera2D, "zoom", Vector2(0.7, 0.7), 0.7)
-
-
-func _on_house_player_exited():
-	var camera_zoom_tween = get_tree().create_tween()
-	camera_zoom_tween.tween_property($player/Camera2D, "zoom", Vector2(0.4, 0.4), 0.7)
