@@ -16,14 +16,10 @@ func _ready():
 func update_laser_text():
 	laser_label.text = str(Globals.laser_amount)
 	update_color(Globals.laser_amount, laser_label, laser_texture)
-	#laser_label.modulate = green
-	#laser_texture.modulate = green
 
 func update_grenade_text():
 	grenade_label.text = str(Globals.grenade_amount)
 	update_color(Globals.grenade_amount, grenade_label, grenade_texture)
-	#grenade_label.modulate = red
-	#grenade_texture.modulate = red
 	
 func update_color(amount, label, icon) -> void:
 	if amount == 0:

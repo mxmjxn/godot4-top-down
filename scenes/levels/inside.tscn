@@ -98,6 +98,6 @@ blend_mode = 1
 position = Vector2(784, 2703)
 shape = SubResource("RectangleShape2D_wfhku")
 
-[node name="UI" parent="." index="5" instance=ExtResource("8_m3wc4")]
+[node name="UI2" parent="." index="5" instance=ExtResource("8_m3wc4")]
 
 [connection signal="body_entered" from="ExitArea" to="." method="_on_exit_area_body_entered"]
