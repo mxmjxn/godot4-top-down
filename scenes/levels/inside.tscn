@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhkekabotrefg"]
+[gd_scene load_steps=9 format=3 uid="uid://bhkekabotrefg"]
 
 [ext_resource type="PackedScene" uid="uid://cttw0yg248mx8" path="res://scenes/levels/level.tscn" id="1_hnqhu"]
 [ext_resource type="Texture2D" uid="uid://csvd1qj3ijgxy" path="res://UltimateGodotIntro2D-main/resources/graphics/ground/dirt.png" id="2_12qdu"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://plj3rkaouqi" path="res://scenes/objects/wall_light.tscn" id="3_8ewdx"]
 [ext_resource type="PackedScene" uid="uid://bhniivd5h6poh" path="res://scenes/objects/simple_light.tscn" id="4_tppnv"]
 [ext_resource type="Texture2D" uid="uid://biyfnf8xq4xqx" path="res://UltimateGodotIntro2D-main/resources/graphics/lights/textures/circle.png" id="6_vlhnd"]
-[ext_resource type="PackedScene" uid="uid://cr53lxaospvxf" path="res://scenes/UI/ui.tscn" id="8_m3wc4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wfhku"]
 size = Vector2(772.5, 361)
@@ -97,7 +96,5 @@ blend_mode = 1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea" index="0"]
 position = Vector2(784, 2703)
 shape = SubResource("RectangleShape2D_wfhku")
-
-[node name="UI2" parent="." index="5" instance=ExtResource("8_m3wc4")]
 
 [connection signal="body_entered" from="ExitArea" to="." method="_on_exit_area_body_entered"]

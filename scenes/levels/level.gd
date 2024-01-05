@@ -24,7 +24,6 @@ func _on_player_grenade_input(pos, direction):
 	
 	
 
-
 func _on_player_update_stats():
 	$UI.update_laser_text
 	$UI.update_grenade_text

@@ -1,10 +1,20 @@
 extends Node
 
-var laser_amount = 30
-var grenade_amount = 10
-var health = 60: 
-	get:
-		pass
+
+signal stat_change
+
+var laser_amount = 30:
 	set(value):
-		pass
+		laser_amount = value
+		stat_change.emit()
+		
+var grenade_amount = 10:
+	set(value):
+		grenade_amount = value
+		stat_change.emit()
+
+var health = 60: 
+	set(value):
+		health = value
+		stat_change.emit()
 		

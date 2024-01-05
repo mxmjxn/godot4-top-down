@@ -17,7 +17,10 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	body.add_item(type)
 	if type == 'health':
 		Globals.health += 10
+	if type == 'laser':
+		Globals.laser_amount += 5
+	if type == 'grenade':
+		Globals.grenade_amount += 1
 	queue_free()
